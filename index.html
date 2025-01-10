@@ -3,101 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebOS rooting methods listing.">
     <title>WebOS Rooting Methods</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>WebOS Rooting Methods</h1>
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Enter WebOS version...">
+            <input type="text" id="searchInput" placeholder="Enter WebOS version" inputmode="decimal" maxlength="3">
             <button id="checkButton">Check</button>
         </div>
         <div class="table-container">
             <table id="rootingTable">
                 <thead>
                     <tr>
-                        <th>WebOS Version</th>
-                        <th class="method-green">DejaVuln</th>
-                        <th class="method-green">FaultManager</th>
-                        <th class="method-yellow">RootMyTV</th>
-                        <th class="method-yellow">Chariot</th>
-                        <th class="method-red">NVM</th>
+                        <th scope="col">WebOS Version</th>
+                        <th scope="col" class="method-green">DejaVuln</th>
+                        <th scope="col" class="method-green">FaultManager</th>
+                        <th scope="col" class="method-yellow">RootMyTV</th>
+                        <th scope="col" class="method-yellow">Chariot</th>
+                        <th scope="col" class="method-red">NVM</th>
                     </tr>
                 </thead>
-                <tr>
-                    <td class="webos-yellow">1.x</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="partial">Partial</td>
-                    <td class="supported">Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-yellow">2.x</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="supported">Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-yellow">3.x</td>
-                    <td class="partial">Partial</td>
-                    <td class="unknown">Unknown</td>
-                    <td class="partial">Partial</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="supported">Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">4.x</td>
-                    <td class="supported">Supported</td>
-                    <td class="supported">Supported</td>
-                    <td class="partial">Partial</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="supported">Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">5.x</td>
-                    <td class="partial">Partial</td>
-                    <td class="supported">Supported</td>
-                    <td class="patched">Patched</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">6.x</td>
-                    <td class="partial">Partial</td>
-                    <td class="supported">Supported</td>
-                    <td class="patched">Patched</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">7.x</td>
-                    <td class="partial">Partial</td>
-                    <td class="supported">Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">8.x</td>
-                    <td class="partial">Partial</td>
-                    <td class="supported">Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                </tr>
-                <tr>
-                    <td class="webos-green">9.x</td>
-                    <td class="patched">Patched</td>
-                    <td class="supported">Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                    <td class="not-supported">Not Supported</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td class="webos-yellow">1.x</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="partial">Partial</td>
+                        <td class="supported">Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-yellow">2.x</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="supported">Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-yellow">3.x</td>
+                        <td class="partial">Partial</td>
+                        <td class="unknown">Unknown</td>
+                        <td class="partial">Partial</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="supported">Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">4.x</td>
+                        <td class="supported">Supported</td>
+                        <td class="supported">Supported</td>
+                        <td class="partial">Partial</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="supported">Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">5.x</td>
+                        <td class="partial">Partial</td>
+                        <td class="supported">Supported</td>
+                        <td class="patched">Patched</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">6.x</td>
+                        <td class="partial">Partial</td>
+                        <td class="supported">Supported</td>
+                        <td class="patched">Patched</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">7.x</td>
+                        <td class="partial">Partial</td>
+                        <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">8.x</td>
+                        <td class="partial">Partial</td>
+                        <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                    </tr>
+                    <tr>
+                        <td class="webos-green">9.x</td>
+                        <td class="patched">Patched</td>
+                        <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="legend-container">
@@ -140,7 +144,7 @@
             <p>NVM method involves modifying the TV's Non-Volatile Memory to enable debug features. It requires opening the TV and is considered dangerous. Works on older webOS versions but not supported on webOS 5 and newer.</p>
         </div>
     </div>
-    <script src="./js/script.js"></script>
-    <script src="./js/searching.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/searching.js" defer></script>
 </body>
 </html>
