@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOS Rooting Methods</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>WebOS Rooting Methods</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter WebOS version...">
+            <button id="checkButton">Check</button>
+        </div>
+        <div class="table-container">
+            <table id="rootingTable">
+                <thead>
+                    <tr>
+                        <th>WebOS Version</th>
+                        <th class="method-green">DejaVuln</th>
+                        <th class="method-green">FaultManager</th>
+                        <th class="method-yellow">RootMyTV</th>
+                        <th class="method-yellow">Chariot</th>
+                        <th class="method-red">NVM</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="webos-yellow">1.x</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="partial">Partial</td>
+                    <td class="supported">Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-yellow">2.x</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="supported">Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-yellow">3.x</td>
+                    <td class="partial">Partial</td>
+                    <td class="unknown">Unknown</td>
+                    <td class="partial">Partial</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="supported">Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">4.x</td>
+                    <td class="supported">Supported</td>
+                    <td class="supported">Supported</td>
+                    <td class="partial">Partial</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="supported">Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">5.x</td>
+                    <td class="partial">Partial</td>
+                    <td class="supported">Supported</td>
+                    <td class="patched">Patched</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">6.x</td>
+                    <td class="partial">Partial</td>
+                    <td class="supported">Supported</td>
+                    <td class="patched">Patched</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">7.x</td>
+                    <td class="partial">Partial</td>
+                    <td class="supported">Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">8.x</td>
+                    <td class="partial">Partial</td>
+                    <td class="supported">Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                </tr>
+                <tr>
+                    <td class="webos-green">9.x</td>
+                    <td class="patched">Patched</td>
+                    <td class="supported">Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                    <td class="not-supported">Not Supported</td>
+                </tr>
+            </table>
+        </div>
+        <div class="legend-container">
+            <div class="legend">
+                <h3>Explanation</h3>
+                <h4>WebOS Version</h4>
+                <ul>
+                    <li><span class="webos-green"></span> Can be rooted by methods in the list</li>
+                    <li><span class="webos-yellow"></span> Unsure to be rooted / Some are patched</li>
+                    <li><span class="webos-red"></span> Cannot be rooted</li>
+                </ul>
+                <h4>Version Support</h4>
+                <ul>
+                    <li><span class="supported"></span> Supported</li>
+                    <li><span class="partial"></span> Partial Support</li>
+                    <li><span class="not-supported"></span> Not Supported</li>
+                    <li><span class="patched"></span> Patched</li>
+                    <li><span class="unknown"></span> Unknown</li>
+                </ul>
+                <h4>Method Type</h4>
+                <ul>
+                    <li><span class="method-green"></span> Tested and works on specified versions</li>
+                    <li><span class="method-yellow"></span> Patched on almost all versions or limited compatibility</li>
+                    <li><span class="method-red"></span> This method is dangerous</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="method-info">
+            <h2>Rooting Methods Information</h2>
+            <h3>DejaVuln</h3>
+            <p>DejaVuln is a tool to root LG TVs and automatically install Homebrew Channel. It works on webOS 3.5 and newer, but not on TVs from 2016 or earlier. 2024 models and recent firmware for most webOS 5+ TVs are patched.</p>
+            <h3>FaultManager</h3>
+            <p>FaultManager is a tool to root and install Homebrew Channel on LG TVs with webOS 4.0+. It uses a vulnerability in faultmanager discovered by buglloc. As of 2025-01-05, no patched firmware is known to exist.</p>
+            <h3>RootMyTV</h3>
+            <p>The vulnerabilities used by RootMyTV (both v1 and v2) have been patched by LG. It's unlikely to work on firmware released since mid-2022. It never worked on webOS versions prior to 3.4.0 or any TVs that came with webOS 1, 2, 7 (22), or 8 (23).</p>
+            <h3>Chariot</h3>
+            <p>Chariot is a tool to root LG TVs running webOS 1. It automatically installs Homebrew Channel and uses a feature of webOS (and NetCast) intended to run the Chariot endpoint test.</p>
+            <h3>NVM</h3>
+            <p>NVM method involves modifying the TV's Non-Volatile Memory to enable debug features. It requires opening the TV and is considered dangerous. Works on older webOS versions but not supported on webOS 5 and newer.</p>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/searching.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.webos-green { background-color: #d1fae5; }
+.webos-yellow { background-color: #fef3c7; }
+.webos-red { background-color: #fee2e2; }
+
+.legend-container {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+
+.legend h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.legend ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.method-green {
+    background-color: #d1fae5;
+}
+
+.method-yellow {
+    background-color: #fef3c7;
+}
+
+.method-red {
+    background-color: #fee2e2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: -0.5px;
+}
+
+.table-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 16px 24px;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85em;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 12px;
+}
+
+
+th.method-green, th.method-yellow, th.method-red {
+    color: #1e293b;
+}
+
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+td {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td:first-child {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.supported {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.partial {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.not-supported {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.patched {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+.unknown {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #3b82f6;
+}
+
+#checkButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkButton:hover {
+    background-color: #2563eb;
+}
+
+.method-info {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+
+.method-info h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.method-info h3 {
+    color: #334155;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.method-info p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    th, td {
+        padding: 12px 16px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    #checkButton {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .method-info {
+        padding: 16px;
+    }
+
+    .method-info .chariot {
+        padding: 12px;
+    }
+}
