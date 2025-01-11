@@ -6,11 +6,23 @@
     --heading-color: #1e293b;
     --border-color: #e2e8f0;
     --shadow-color: rgba(0, 0, 0, 0.1);
-    
+
     --webos-green: #d1fae5;
     --webos-yellow: #fef3c7;
     --webos-red: #fee2e2;
-    
+
+    --method-box-bg: #f8f9fa;
+    --method-box-border: #dee2e6;
+    /* Dark mode variables */
+    --dark-background: #1a202c;
+    --dark-text: #e2e8f0;
+    --dark-heading: #f7fafc;
+    --dark-border: #4a5568;
+    --dark-shadow: rgba(255, 255, 255, 0.1);
+    --dark-table-bg: #2d3748;
+    --dark-table-header: #4a5568;
+    --dark-table-hover: #3a4a5e;
+
     --supported-bg: #d1fae5;
     --supported-text: #065f46;
     --partial-bg: #dbeafe;
@@ -36,9 +48,170 @@ body {
     color: var(--text-color);
 }
 
+/* Dark mode styles */
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: var(--dark-background);
+    --text-color: var(--dark-text);
+    --heading-color: var(--dark-heading);
+    --border-color: var(--dark-border);
+    --shadow-color: var(--dark-shadow);
+    --background-color-light: var(--dark-table-bg);
+    --method-box-bg: #2c3e50;
+    --method-box-border: #4a6278;
+}
+
+/* Table styles for dark mode */
+body.dark-mode .table-container {
+    background-color: var(--dark-table-bg);
+}
+
+body.dark-mode th {
+    background-color: var(--dark-table-header);
+    color: var(--dark-heading);
+}
+
+body.dark-mode td {
+    color: var(--dark-text);
+}
+
+body.dark-mode tr:hover {
+    background-color: var(--dark-table-hover);
+}
+
+/* Method colors for dark mode */
+body.dark-mode th.method-green, 
+body.dark-mode th.method-yellow, 
+body.dark-mode th.method-red {
+    color: var(--dark-heading);
+}
+
+body.dark-mode .method-green { background-color: rgba(46, 204, 113, 0.2); }
+body.dark-mode .method-yellow { background-color: rgba(241, 196, 15, 0.2); }
+body.dark-mode .method-red { background-color: rgba(231, 76, 60, 0.2); }
+
+/* Status colors for dark mode */
+body.dark-mode .supported { background-color: rgba(39, 174, 96, 0.2); color: #2ecc71; }
+body.dark-mode .partial { background-color: rgba(243, 156, 18, 0.2); color: #f39c12; }
+body.dark-mode .not-supported { background-color: rgba(192, 57, 43, 0.2); color: #e74c3c; }
+body.dark-mode .patched { background-color: rgba(142, 68, 173, 0.2); color: #9b59b6; }
+body.dark-mode .unknown { background-color: rgba(52, 73, 94, 0.2); color: #bdc3c7; }
+
+/* WebOS version colors for dark mode */
+body.dark-mode .webos-green { background-color: rgba(46, 204, 113, 0.2); color: #2ecc71; }
+body.dark-mode .webos-yellow { background-color: rgba(241, 196, 15, 0.2); color: #f1c40f; }
+body.dark-mode .webos-red { background-color: rgba(231, 76, 60, 0.2); color: #e74c3c; }
+
+/* Search results for dark mode */
+body.dark-mode #searchResults {
+    background-color: var(--dark-background);
+}
+
+body.dark-mode .search-result {
+    border-bottom-color: var(--dark-border);
+}
+
+body.dark-mode .search-result h3 {
+    color: var(--dark-heading);
+}
+
+body.dark-mode .method-box {
+    background-color: var(--dark-table-bg);
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .method-box h4,
+body.dark-mode .method-box p {
+    color: var(--dark-text);
+}
+/* Dark mode method box styles */
+body.dark-mode .method-box {
+    background-color: var(--method-box-bg);
+    border-color: var(--method-box-border);
+}
+
+body.dark-mode .method-box.supported {
+    background-color: rgba(39, 174, 96, 0.2);
+}
+
+body.dark-mode .method-box.partial {
+    background-color: rgba(243, 156, 18, 0.2);
+}
+
+body.dark-mode .method-box.not-supported {
+    background-color: rgba(192, 57, 43, 0.2);
+}
+
+body.dark-mode .method-box.patched {
+    background-color: rgba(142, 68, 173, 0.2);
+}
+
+body.dark-mode .method-box.unknown {
+    background-color: rgba(52, 73, 94, 0.2);
+}
+
+body.dark-mode .method-box h4,
+body.dark-mode .method-box p,
+body.dark-mode .method-box .status-indicator {
+    color: var(--dark-text);
+}
+
+
+/* Fix for the line on top of the table */
+#searchResults {
+    border-bottom: none;
+}
+
+.search-result:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .search-result:not(:last-child) {
+    border-bottom-color: var(--dark-border);
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--heading-color);
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.toggle-icon {
+    margin-right: 5px;
+}
 .container {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 100px auto 60px;
     padding: 0 20px;
 }
 
@@ -71,28 +244,69 @@ h1 {
     border-color: var(--primary-color);
 }
 
+/* Search results container box */
 #searchResults {
-  max-height: 400px;
-  overflow-y: auto;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  margin-top: 20px;
-  background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    margin-top: 20px;
+    padding: 15px;
+    display: none; /* Hide by default */
 }
+
+/* Show search results when they have content */
+#searchResults:not(:empty) {
+    display: block;
+}
+
+
+/* Dark mode styles for search results */
+body.dark-mode #searchResults {
+    background-color: var(--dark-background);
+    border-color: var(--dark-border);
+    box-shadow: 0 2px 4px var(--dark-shadow);
+}
+
+/* Ensure no bottom border on the last search result */
+.search-result:last-child {
+    border-bottom: none;
+}
+
 
 .search-result {
   padding: 15px;
   border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color);
 }
 
-.search-result:last-child {
-  border-bottom: none;
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: var(--dark-background);
+    --text-color: var(--dark-text);
+    --heading-color: var(--dark-heading);
+    --border-color: var(--dark-border);
+    --shadow-color: var(--dark-shadow);
+    --background-color-light: var(--dark-table-bg);
+    --method-box-bg: #2c3e50;
+    --method-box-border: #4a6278;
 }
 
-.search-result h3 {
-  margin-bottom: 10px;
-  color: var(--heading-color);
+/* Search results for dark mode */
+body.dark-mode #searchResults {
+    background-color: var(--dark-background);
+    border-color: var(--dark-border);
 }
+
+body.dark-mode .search-result {
+    background-color: var(--dark-background);
+    border-bottom-color: var(--dark-border);
+}
+
+body.dark-mode .search-result h3 {
+    color: var(--dark-heading);
+}
+
 
 .methods-container {
   display: flex;
@@ -101,13 +315,13 @@ h1 {
 }
 
 .method-box {
-  background-color: var(--background-color-light);
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  padding: 10px;
-  flex: 1 1 calc(50% - 5px);
-  min-width: 200px;
-  position: relative;
+    background-color: var(--method-box-bg);
+    border: 1px solid var(--method-box-border);
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1 1 calc(50% - 5px);
+    min-width: 200px;
+    position: relative;
 }
 
 .method-box h4 {
@@ -120,6 +334,23 @@ h1 {
   margin: 0;
   font-size: 0.9em;
   color: var(--text-color-light);
+}
+/* Method box styles */
+.method-box .method-notes {
+    color: var(--text-color-light);
+}
+
+/* Dark mode method box styles */
+body.dark-mode .method-box.supported .method-notes {
+    color: rgba(46, 204, 113, 0.8); /* light green */
+}
+
+body.dark-mode .method-box.partial .method-notes {
+    color: rgba(241, 196, 15, 0.8); /* light yellow */
+}
+
+body.dark-mode .method-box:not(.supported):not(.partial) .method-notes {
+    color: var(--dark-text-light);
 }
 
 .status-indicator {
@@ -153,7 +384,7 @@ h1 {
 }
 
 .table-container {
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 12px;
     box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color);
     overflow-x: auto;
@@ -190,8 +421,10 @@ tr:hover {
 }
 
 td {
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--method-box-bg);
+    border: 1px solid var(--method-box-border);
 }
+
 
 td:first-child {
     font-weight: 500;
@@ -214,7 +447,7 @@ td:first-child {
 
 .legend-container {
     margin-top: 20px;
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
     padding: 20px;
@@ -250,7 +483,7 @@ td:first-child {
 
 .method-info {
     margin-top: 40px;
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 12px;
     box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color);
     padding: 24px;
@@ -270,6 +503,64 @@ td:first-child {
 .method-info p {
     color: #475569;
     margin-bottom: 15px;
+}
+
+.site-footer {
+    background-color: var(--background-color);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: var(--text-color);
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.method-box.partial {
+    background-color: var(--webos-yellow);
+    border-color: var(--border-color);
+}
+
+.method-box.partial .status-indicator,
+.method-box.partial h4,
+.method-box.partial p {
+    color: var(--text-color);
+}
+
+.method-box {
+    border: 1px solid var(--border-color);
+}
+
+.method-box.supported {
+    background-color: var(--supported-bg);
+}
+
+.method-box.supported .status-indicator {
+    color: var(--supported-text);
 }
 
 @media (max-width: 768px) {
@@ -390,27 +681,4 @@ td:first-child {
     .method-box {
       flex: 1 1 100%;
     }
-}
-
-.method-box.partial {
-    background-color: var(--webos-yellow);
-    border-color: var(--border-color);
-}
-
-.method-box.partial .status-indicator,
-.method-box.partial h4,
-.method-box.partial p {
-    color: var(--text-color);
-}
-
-.method-box {
-    border: 1px solid var(--border-color);
-}
-
-.method-box.supported {
-    background-color: var(--supported-bg);
-}
-
-.method-box.supported .status-indicator {
-    color: var(--supported-text);
 }

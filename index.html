@@ -10,9 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>MrRoot</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <span class="toggle-icon">🌙</span>
+                <span class="toggle-text">Dark Mode</span>
+            </button>
+        </div>
+    </nav>
     <div class="container">
         <h1>WebOS Rooting Methods</h1>
         <div class="search-container">
+
             <input type="text" id="searchInput" placeholder="Enter WebOS version" inputmode="decimal" maxlength="5">
         </div>
         <div id="searchResults"></div>
@@ -65,7 +75,7 @@
                         <td class="webos-green">5.x</td>
                         <td class="partial">Partial</td>
                         <td class="supported">Supported</td>
-                        <td class="patched">Patched</td>
+                        <td class="partial">Partial</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                     </tr>
@@ -73,7 +83,7 @@
                         <td class="webos-green">6.x</td>
                         <td class="partial">Partial</td>
                         <td class="supported">Supported</td>
-                        <td class="patched">Patched</td>
+                        <td class="partial">Partial</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                     </tr>
@@ -144,6 +154,16 @@
             <p>NVM method involves modifying the TV's Non-Volatile Memory to enable debug features. It requires opening the TV and is considered dangerous. Works on older webOS versions but not supported on webOS 5 and newer.</p>
         </div>
     </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MrRoot - MIT License</p>
+            <p>Created by <a href="https://github.com/JustablockCode" target="_blank" rel="noopener noreferrer">justablock</a></p>
+            <div class="footer-links">
+                <a href="https://github.com/JustablockCode/MrRoot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://discord.gg/9uq26vZnwR" target="_blank" rel="noopener noreferrer">Discord</a>
+            </div>
+        </div>
+    </footer>
     <script src="./js/script.js" defer></script>
     <script src="./js/searching.js" defer></script>
 </body>

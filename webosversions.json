@@ -107,6 +107,11 @@
             "name": "faultmanager",
             "notes": "Supported.",
             "status": "supported"
+          },
+          {
+            "name": "rootmytv",
+            "notes": "Partial support.",
+            "status": "partial"
           }
         ]
       },
@@ -122,6 +127,11 @@
             "name": "faultmanager",
             "notes": "Supported.",
             "status": "supported"
+          },
+          {
+            "name": "rootmytv",
+            "notes": "Partial support.",
+            "status": "partial"
           }
         ]
       },
