@@ -1,0 +1,169 @@
+{
+    "versions": [
+      {
+        "version": "1.0",
+        "rootMethods": [
+          {
+            "name": "chariot",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "2.0",
+        "rootMethods": [
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "3.0",
+        "rootMethods": [
+          {
+            "name": "rootmytv",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "dejavuln",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "3.5",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Untested on 3.5 - 3.9 .",
+            "status": "partial"
+          },
+          {
+            "name": "rootmytv",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "4.0",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "rootmytv",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "5.0",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "6.0",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "7.0",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "8.0",
+        "rootMethods": [
+          {
+            "name": "dejavuln",
+            "notes": "Partial support.",
+            "status": "partial"
+          },
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "9.0",
+        "rootMethods": [
+          {
+            "name": "faultmanager",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      }
+    ]
+  }
