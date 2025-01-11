@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
       this.value = this.value.replace(/\.+$/, '');
     }
 
-    if (this.value.length > 3) {
-      this.value = this.value.slice(0, 3);
+    if (this.value.length > 5) {
+      this.value = this.value.slice(0, 5);
     }
 
     search(); // on input
