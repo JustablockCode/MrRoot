@@ -101,13 +101,15 @@ document.addEventListener('DOMContentLoaded', function() {
   searchInput.addEventListener('input', function(e) {
     this.value = this.value.replace(/[^0-9.]/g, '');
 
-    let periodCount = (this.value.match(/\./g) || []).length;
-    if (periodCount > 1) {
-      this.value = this.value.replace(/\.+$/, '');
+    this.value = this.value.replace(/\.{2,}/g, '.');
+
+    let parts = this.value.split('.');
+    if (parts.length > 4) {
+      this.value = parts.slice(0, 4).join('.');
     }
 
-    if (this.value.length > 5) {
-      this.value = this.value.slice(0, 5);
+    if (this.value.length > 15) {
+      this.value = this.value.slice(0, 15);
     }
 
     if (this.value.trim() === '') {
@@ -117,5 +119,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-
