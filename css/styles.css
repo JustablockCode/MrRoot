@@ -437,6 +437,20 @@ td:first-child {
 
 .supported { background-color: var(--supported-bg); color: var(--supported-text); }
 .partial { background-color: var(--partial-bg); color: var(--partial-text); }
+
+.footer-content .disclaimer {
+    font-size: 0.8em;
+    margin-top: 15px;
+    text-align: center;
+    color: #888;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark-mode .footer-content .disclaimer {
+    color: #aaa;
+}
 .not-supported { background-color: var(--not-supported-bg); color: var(--not-supported-text); }
 .patched { background-color: var(--patched-bg); color: var(--patched-text); }
 .unknown { background-color: var(--unknown-bg); color: var(--unknown-text); }

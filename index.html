@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WebOS rooting methods listing.">
-    <title>WebOS Rooting Methods</title>
+    <title>MrRoot</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <h1>MrRoot V2.0</h1>
+            <h1>MrRoot V2.1</h1>
             <button id="darkModeToggle" class="dark-mode-toggle">
                 <span class="toggle-icon">🌙</span>
                 <span class="toggle-text">Dark Mode</span>
@@ -21,7 +21,6 @@
     </nav>
     <div class="container">
         <div class="search-container">
-
             <input type="text" id="searchInput" placeholder="Enter WebOS version" inputmode="decimal" maxlength="5">
         </div>
         <div id="searchResults"></div>
@@ -35,6 +34,7 @@
                         <th scope="col" class="method-yellow">RootMyTV</th>
                         <th scope="col" class="method-yellow">Chariot</th>
                         <th scope="col" class="method-red">NVM</th>
+                        <th scope="col" class="method-yellow">MVPD</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,6 +45,7 @@
                         <td class="not-supported">Not Supported</td>
                         <td class="partial">Partial</td>
                         <td class="supported">Supported</td>
+                        <td class="supported">Supported</td>
                     </tr>
                     <tr>
                         <td class="webos-yellow">2.x</td>
@@ -52,6 +53,7 @@
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
+                        <td class="supported">Supported</td>
                         <td class="supported">Supported</td>
                     </tr>
                     <tr>
@@ -61,6 +63,7 @@
                         <td class="partial">Partial</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="supported">Supported</td>
+                        <td class="partial">Partial</td>
                     </tr>
                     <tr>
                         <td class="webos-green">4.x</td>
@@ -69,12 +72,14 @@
                         <td class="partial">Partial</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
                     </tr>
                     <tr>
                         <td class="webos-green">5.x</td>
                         <td class="partial">Partial</td>
                         <td class="supported">Supported</td>
                         <td class="partial">Partial</td>
+                        <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                     </tr>
@@ -85,11 +90,13 @@
                         <td class="partial">Partial</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
                     </tr>
                     <tr>
                         <td class="webos-green">7.x</td>
                         <td class="partial">Partial</td>
                         <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
@@ -101,11 +108,13 @@
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
+                        <td class="not-supported">Not Supported</td>
                     </tr>
                     <tr>
                         <td class="webos-green">9.x</td>
                         <td class="patched">Patched</td>
                         <td class="supported">Supported</td>
+                        <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
                         <td class="not-supported">Not Supported</td>
@@ -151,7 +160,10 @@
             <p>Chariot is a tool to root LG TVs running webOS 1. It automatically installs Homebrew Channel and uses a feature of webOS (and NetCast) intended to run the Chariot endpoint test.</p>
             <h3>NVM</h3>
             <p>NVM method involves modifying the TV's Non-Volatile Memory to enable debug features. It requires opening the TV and is considered dangerous. Works on older webOS versions but not supported on webOS 5 and newer.</p>
+            <h3>MVPD</h3>
+            <p>MVPD (Multichannel Video Programming Distributor) is a method that exploits a vulnerability in the TV's MVPD functionality. It works across all webOS versions and is considered relatively safe and easy to use.</p>
         </div>
+    </div>
     </div>
     <footer class="site-footer">
         <div class="footer-content">
@@ -161,9 +173,16 @@
                 <a href="https://github.com/JustablockCode/MrRoot" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://discord.gg/9uq26vZnwR" target="_blank" rel="noopener noreferrer">Discord</a>
             </div>
+            <p class="disclaimer">
+                Disclaimer: The rooting methods listed on this website are for informational purposes only. 
+                MrRoot does not endorse, promote, or advertise any of these methods. 
+                We are not affiliated with or endorsed by LG, WebOS, or any of the rooting method creators. 
+                Use this information responsibly and at your own risk.
+            </p>
         </div>
     </footer>
     <script src="./js/script.js" defer></script>
     <script src="./js/searching.js" defer></script>
 </body>
 </html>
+

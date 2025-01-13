@@ -12,14 +12,25 @@
             "name": "nvm",
             "notes": "Supported.",
             "status": "supported"
+          },
+          {
+            "name": "mvpd",
+            "notes": "Supported.",
+            "status": "supported"
           }
         ]
       },
+
       {
         "version": "2.0",
         "rootMethods": [
           {
             "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "mvpd",
             "notes": "Supported.",
             "status": "supported"
           }
@@ -30,9 +41,29 @@
         "rootMethods": [
           {
             "name": "rootmytv",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "dejavuln",
             "notes": "Partial support.",
             "status": "partial"
           },
+          {
+            "name": "nvm",
+            "notes": "Supported.",
+            "status": "supported"
+          },
+          {
+            "name": "mvpd",
+            "notes": "Supported.",
+            "status": "supported"
+          }
+        ]
+      },
+      {
+        "version": "3.4.2",
+        "rootMethods": [
           {
             "name": "dejavuln",
             "notes": "Partial support.",
