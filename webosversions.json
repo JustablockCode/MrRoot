@@ -45,11 +45,6 @@
             "status": "supported"
           },
           {
-            "name": "dejavuln",
-            "notes": "Partial support.",
-            "status": "partial"
-          },
-          {
             "name": "nvm",
             "notes": "Supported.",
             "status": "supported"
